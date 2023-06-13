@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+	<h1 id="result">Sum the numbers between 1 and 100 </h1>
+	<form>
+        <script>
+            let sum=0;
+            function sumNumbers()
+                {
+                    
+                    for(let i=0;i<100;i++)
+                    {
+                        let j=i+1;
+                        sum+=j;
+                    }
+                    console.log(sum);
+                    alert(sum);
+                    document.getElementById("result").innerHTML="Sum the numbers between 1 and 100 " + sum;
+                }
+                
+        </script>
+    	<button type="submit" onclick="sumNumbers()"> Submit </button>
+    </form>
+   
+</body>
+</html>
